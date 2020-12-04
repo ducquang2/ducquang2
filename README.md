@@ -1,5 +1,9 @@
 ### ducquang2 ☁️
 
+<h2>I'm Duc Quang</h2>
+
+<img align='right' src='https://i.gifer.com/XOsX.gif' width='200"'>
+
 ```
 joined github on August 31 ,2020
 
