@@ -10,4 +10,6 @@
 
 [Click Here](https://www.linkedin.com/in/duc-quang/)
 
+![Quang's github stats](https://github-readme-stats.vercel.app/api?username=ducquang2&show_icons=true&theme=merko)
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ducquang2&layout=compact)
