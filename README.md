@@ -7,7 +7,7 @@
 >
 >first commitment on August 30, 2020
 
-![Quang's github stats](https://github-readme-stats.vercel.app/api?username=ducquang2&show_icons=true&theme=merko)
+<!--![Quang's github stats](https://github-readme-stats.vercel.app/api?username=ducquang2&show_icons=true&theme=merko)-->
 
 [Click Here](https://www.linkedin.com/in/duc-quang/)
 
