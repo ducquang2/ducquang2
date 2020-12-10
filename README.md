@@ -11,6 +11,6 @@
 
 [Click Here](https://www.linkedin.com/in/duc-quang/)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ducquang2&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ducquang2&layout=compact&theme=merko)
 
 
