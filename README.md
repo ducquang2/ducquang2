@@ -11,4 +11,14 @@
 
 ![Quang's github stats](https://github-readme-stats.vercel.app/api?username=ducquang2&show_icons=true&theme=merko) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ducquang2&layout=compact&theme=merko)
 
+![](https://komarev.com/ghpvc/?username=ducquang2&style=flat-square&label=Profile+Views&color=000000)
 
+<!-- 
+    Visitors
+    Portfolio
+    Personal Blogs 
+    Social Media, Contact
+    Languages and Tools
+    Projects
+    Github Stats
+ -->
