@@ -12,6 +12,7 @@
 ## Tech Stacks
 <details>
   <summary>Click to expand</summary>
+  
 |   | Stack | Languages and Tools |
 |-- |------|------------|
 |   | **Front-End** | ![HTML5](https://img.shields.io/badge/-HTML5-black?style=flat-square&logo=html5) ![CSS3](https://img.shields.io/badge/-CSS3-black?style=flat-square&logo=css3) ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript) ![NPM](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)|
