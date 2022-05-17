@@ -9,4 +9,4 @@
 >
 >Contact me : [![LinkedIn](https://img.shields.io/badge/-LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/duc-quang/) [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nducquangg@gmail.com)
 
-![Quang's github stats](https://github-readme-streak-stats.herokuapp.com/?user=ducquang2&theme=gotham&hide_border=true&date_format=M%20j%5B%2C%20Y%5D)
+![Quang's github stats](https://github-readme-streak-stats.herokuapp.com/?user=ducquang2&theme=github-dark)
