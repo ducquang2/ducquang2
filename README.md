@@ -6,9 +6,8 @@
 
 ![Quang's github stats](https://readme-stats-fawn-iota.vercel.app/api?username=ducquang2&include_all_commits=true&theme=gotham)
 
-updaet
+uasbdhjad
 
-hasdhashd
-asdhasdh
-heheheheh
-hehe
+anskjdas
+
+asdasndkjasdn
