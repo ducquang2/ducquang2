@@ -1,7 +1,7 @@
 # Duc Quang
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=4CD696&center=true&vCenter=true&random=false&width=435&lines=Software+Developer;Web+Developer;React+%26+Svelte+Specialist" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=4CD696&center=true&vCenter=true&random=false&width=435&lines=Software+Developer;Web+Developer;React+%26+React+Native+Specialist" alt="Typing SVG" />
 </div>
 
 <div align="center">
