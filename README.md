@@ -1,4 +1,4 @@
-# Duc Quang
+# Duc Quang <img src="https://img.shields.io/badge/🎯-Focusing-497F40" alt="Focusing" />
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=4CD696&center=true&vCenter=true&random=false&width=435&lines=Software+Developer;Web+Developer;React+%26+React+Native+Specialist" alt="Typing SVG" />
@@ -27,9 +27,9 @@ I'm a passionate software developer specializing in modern web technologies. My 
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff" alt="TypeScript" >
   <img src="https://img.shields.io/badge/React_Native-%2320232a.svg?logo=react&logoColor=%2361DAFB" alt="React_Native" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff" alt="TypeScript" >
   <img src="https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white" alt="HTML5" />
 </p>
 
