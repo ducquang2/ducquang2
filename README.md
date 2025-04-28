@@ -41,16 +41,6 @@ I'm a passionate software developer specializing in modern web technologies. My 
   <img src="https://github-readme-streak-stats-mu-plum.vercel.app?user=ducquang2&theme=gotham" alt="GitHub Streak" />
 </p>
 
-<!-- ## 🚀 Featured Projects
-
-<div align="center">
-  <a href="https://github.com/ducquang2/project-name">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=ducquang2&repo=ducquang2&theme=gotham" />
-  </a>
-</div>
-
--->
-
 ---
 
 <p align="center">☁️ Thanks for visiting my profile! Let's connect and build something amazing together.</p>
