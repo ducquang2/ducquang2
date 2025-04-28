@@ -1,6 +1,5 @@
 # Duc Quang <img src="https://img.shields.io/badge/🎯-Focusing-497F40" alt="Focusing" />
 
-teste
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=4CD696&center=true&vCenter=true&random=false&width=435&lines=Software+Developer;Web+Developer;React+%26+React+Native+Specialist" alt="Typing SVG" />
