@@ -18,9 +18,15 @@
 I'm a passionate software developer specializing in modern web technologies. My focus is on creating clean, efficient, and user-friendly applications.
 
 <!-- Spotify widget -->
-<p align="center">
+<!-- <p align="center">
   <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=0np3t9af3wr4kkb3cbs5pc1g7&redirect=true">
     <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=0np3t9af3wr4kkb3cbs5pc1g7&cover_image=true&theme=default&show_offline=true&background_color=12451c&interchange=false&bar_color=4cd696&bar_color_cover=false" alt="spotify-github-profile" />
+  </a>
+</p> -->
+
+<p align="center">
+  <a href="https://github.com/kittinan/spotify-github-profile">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=0np3t9af3wr4kkb3cbs5pc1g7&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=false&profanity=false&hide_remaster=false">
   </a>
 </p>
 
