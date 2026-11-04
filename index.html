@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Duc Quang — Software Developer</title>
+  <meta name="description" content="Duc Quang — software developer focused on React, React Native and TypeScript." />
+  <meta property="og:title" content="Duc Quang — Software Developer" />
+  <meta property="og:description" content="React, React Native & TypeScript developer." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/70498757?v=4" />
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/70498757?s=64&v=4" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f6f8f5;
+      --surface: #ffffff;
+      --text: #14201a;
+      --muted: #5b6b61;
+      --line: #dfe6e0;
+      --accent: #2f8a5c;
+      --accent-soft: #e3f3ea;
+      --mono: "Fira Code", ui-monospace, monospace;
+      --sans: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0c120e;
+        --surface: #121a15;
+        --text: #e6efe9;
+        --muted: #8fa397;
+        --line: #1f2b24;
+        --accent: #4cd696;
+        --accent-soft: #15291e;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+    /* Nav */
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: color-mix(in srgb, var(--bg) 85%, transparent);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .logo { font-family: var(--mono); font-weight: 500; text-decoration: none; }
+    .logo span { color: var(--accent); }
+    nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; }
+    nav ul a { text-decoration: none; color: var(--muted); font-size: 14px; }
+    nav ul a:hover { color: var(--text); }
+
+    /* Hero */
+    .hero { padding: 96px 0 72px; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
+    .eyebrow { font-family: var(--mono); color: var(--accent); font-size: 14px; margin: 0 0 12px; }
+    h1 { font-size: clamp(40px, 7vw, 64px); line-height: 1.05; letter-spacing: -0.03em; margin: 0 0 16px; }
+    .role { font-family: var(--mono); font-size: clamp(16px, 2.4vw, 20px); color: var(--muted); min-height: 1.6em; margin: 0 0 20px; }
+    .role .cursor { display: inline-block; width: 0.55em; background: var(--accent); animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .lede { max-width: 540px; color: var(--muted); margin: 0 0 28px; }
+    .avatar { width: 168px; height: 168px; border-radius: 50%; border: 1px solid var(--line); box-shadow: 0 0 0 8px var(--accent-soft); }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 16px; border-radius: 8px; font-size: 14px; font-weight: 500;
+      text-decoration: none; border: 1px solid var(--line); background: var(--surface);
+      transition: border-color .15s, transform .15s;
+    }
+    .btn:hover { border-color: var(--accent); transform: translateY(-1px); }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+    .btn svg { width: 16px; height: 16px; fill: currentColor; }
+
+    /* Sections */
+    section { padding: 56px 0; border-top: 1px solid var(--line); }
+    h2 { font-family: var(--mono); font-size: 22px; font-weight: 500; color: var(--accent); margin: 0 0 24px; letter-spacing: .02em; }
+    h2::before { content: "// "; color: var(--muted); }
+
+    .about { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; }
+    .about p { margin: 0 0 14px; }
+    .facts { list-style: none; margin: 0; padding: 0; font-size: 15px; }
+    .facts li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px dashed var(--line); }
+    .facts li span:first-child { color: var(--muted); }
+    .facts li span:last-child { text-align: right; }
+
+    .stack-group + .stack-group { margin-top: 18px; }
+    .stack-group h3 { font-size: 13px; font-weight: 500; color: var(--muted); margin: 0 0 10px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { font-family: var(--mono); font-size: 13px; padding: 5px 10px; border-radius: 6px; background: var(--surface); border: 1px solid var(--line); }
+    .chip.main { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+
+    .timeline { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--line); }
+    .job { position: relative; padding: 0 0 32px 28px; }
+    .job:last-child { padding-bottom: 0; }
+    .job::before {
+      content: ""; position: absolute; left: -7px; top: 8px;
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--bg); border: 2px solid var(--muted);
+    }
+    .job.current::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+    .job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
+    .job h3 { margin: 0; font-size: 20px; }
+    .job .company { color: var(--accent); font-weight: 500; }
+    .job .when { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+    .job p { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+    .job .roles { list-style: none; margin: 8px 0 0; padding: 0; }
+    .job .roles li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; font-size: 15px; padding: 2px 0; }
+
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .card {
+      display: flex; flex-direction: column; gap: 10px;
+      padding: 20px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line);
+      transition: border-color .15s, transform .15s;
+    }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .card h3 { margin: 0; font-size: 20px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14px; flex: 1; }
+    .card .tags { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+    .card .links { display: flex; gap: 14px; font-size: 13px; }
+    .card .links a { color: var(--muted); text-decoration: none; }
+    .card .links a:hover { color: var(--accent); }
+    .more { margin-top: 20px; font-size: 14px; }
+    .more a { color: var(--accent); }
+
+    .contact { text-align: center; padding: 72px 0; }
+    .contact p { color: var(--muted); max-width: 480px; margin: 0 auto 24px; }
+    .contact .actions { justify-content: center; }
+
+    footer { border-top: 1px solid var(--line); padding: 24px 0; font-size: 13px; color: var(--muted); text-align: center; font-family: var(--mono); }
+
+    @media (max-width: 720px) {
+      nav ul { display: none; }
+      .hero { grid-template-columns: 1fr; padding: 56px 0 48px; }
+      .avatar { width: 104px; height: 104px; order: -1; }
+      .about { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="logo" href="#top">ducquang<span>.</span>dev</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>Duc Quang</h1>
+        <p class="role"><span id="typed">Software Engineer</span><span class="cursor">&nbsp;</span></p>
+        <p class="lede">I build clean, efficient and user-friendly applications with modern web technologies — mostly React, React Native and TypeScript.</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:nducquangg@gmail.com">Get in touch</a>
+          <a class="btn" href="https://github.com/ducquang2" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+          <a class="btn" href="https://www.linkedin.com/in/duc-quang/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.15C0 .52.53 0 1.18 0h13.64C15.47 0 16 .52 16 1.15v13.7c0 .63-.53 1.15-1.18 1.15H1.18C.53 16 0 15.48 0 14.85V1.15zm4.94 12.24V6.17H2.54v7.22h2.4zM3.74 5.18c.84 0 1.36-.55 1.36-1.25-.02-.71-.52-1.25-1.34-1.25-.82 0-1.36.54-1.36 1.25 0 .7.52 1.25 1.33 1.25h.01zm4.91 8.21V9.36c0-.22.02-.43.08-.58.17-.43.57-.88 1.23-.88.87 0 1.22.66 1.22 1.64v3.86h2.4V9.25c0-2.22-1.18-3.25-2.76-3.25-1.27 0-1.84.7-2.16 1.19v.03h-.02l.02-.03V6.17h-2.4c.03.68 0 7.22 0 7.22h2.4z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/70498757?s=336&v=4" alt="Duc Quang" />
+    </header>
+
+    <section id="about">
+      <h2>about</h2>
+      <div class="about">
+        <div>
+          <p>I'm a Software Engineer at NAB Innovation Centre Vietnam, specializing in modern web technologies with a focus on React and React Native.</p>
+          <p>As a curious computer geek with a thirst for knowledge, I love picking up new programming languages. Working in tech every day reminds me to keep improving my skills and keep feeding that passion.</p>
+          <p>I studied at the University of Science, VNU-HCM, where I worked on everything from full-stack web apps and Windows desktop software to a Unity tower-defense game.</p>
+        </div>
+        <ul class="facts">
+          <li><span>Currently</span><span>Software Engineer @ NAB Innovation Centre Vietnam</span></li>
+          <li><span>Based in</span><span>Ho Chi Minh City, Vietnam</span></li>
+          <li><span>Focus</span><span>React · React Native · TypeScript</span></li>
+          <li><span>Education</span><span>B.Sc. Information Technology, HCMUS</span></li>
+          <li><span>Award</span><span>Bronze Medal, HCMC Informatics 2019</span></li>
+          <li><span>Editor</span><span>Neovim</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>experience</h2>
+      <ol class="timeline">
+        <li class="job current">
+          <div class="job-head">
+            <h3>Software Engineer · <span class="company">NAB Innovation Centre Vietnam</span></h3>
+            <span class="when">Aug 2026 — Present</span>
+          </div>
+          <p>Full-time · Hybrid · Ho Chi Minh City</p>
+        </li>
+        <li class="job">
+          <div class="job-head">
+            <h3>Software Engineer · <span class="company">chatavocado</span></h3>
+            <span class="when">Apr 2025 — Aug 2026</span>
+          </div>
+          <p>Full-time · Mobile application development and software development.</p>
+        </li>
+        <li class="job">
+          <div class="job-head">
+            <h3><span class="company">Nimbus</span></h3>
+            <span class="when">Nov 2022 — Apr 2025</span>
+          </div>
+          <ul class="roles">
+            <li><span>Junior Software Engineer · Full-time</span><span class="when">Jun 2023 — Apr 2025</span></li>
+            <li><span>Fresher Software Engineer · Part-time</span><span class="when">Nov 2022 — May 2023</span></li>
+          </ul>
+          <p>TypeScript · React Native</p>
+        </li>
+        <li class="job">
+          <div class="job-head">
+            <h3>Software Engineer · <span class="company">Kao Engine</span></h3>
+            <span class="when">Oct 2020 — Dec 2021</span>
+          </div>
+          <p>Part-time · Application Engineer training program: React, Node.js, voice assistants, HTML/CSS/JS, Figma. Supported teams at Hackathon Junction 2020 — implementing features and fixing bugs.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="stack">
+      <h2>stack</h2>
+      <div class="stack-group">
+        <h3>Daily drivers</h3>
+        <div class="chips">
+          <span class="chip main">React</span>
+          <span class="chip main">React Native</span>
+          <span class="chip main">TypeScript</span>
+          <span class="chip main">JavaScript</span>
+          <span class="chip main">HTML / CSS</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3>Also worked with</h3>
+        <div class="chips">
+          <span class="chip">Vite</span>
+          <span class="chip">Tailwind CSS</span>
+          <span class="chip">React Router</span>
+          <span class="chip">React Hook Form + Zod</span>
+          <span class="chip">GraphQL / Apollo</span>
+          <span class="chip">Lerna monorepos</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">C# / WinUI</span>
+          <span class="chip">Unity</span>
+          <span class="chip">Python</span>
+          <span class="chip">Java</span>
+          <span class="chip">Lua</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>projects</h2>
+      <div class="projects">
+        <article class="card">
+          <h3>NitFlex</h3>
+          <p>Movie review web app with Google sign-in, trailers and reviews. Team project for the Advanced Web Programming course.</p>
+          <div class="tags">React · TypeScript · Tailwind · Vite</div>
+          <div class="links">
+            <a href="https://ducquang2.github.io/nitflex-web/" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://github.com/ducquang2/nitflex-web" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Tower Defense</h3>
+          <p>2D tower-defense game across 5 levels with towers, spells and traps. Team project for the Game Development course.</p>
+          <div class="tags">Unity 6 · C#</div>
+          <div class="links">
+            <a href="https://github.com/ducquang2/TowerDef" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </article>
+      </div>
+      <p class="more"><a href="https://github.com/ducquang2?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub →</a></p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>contact</h2>
+      <p>Open to interesting projects and conversations. Let's connect and build something amazing together.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:nducquangg@gmail.com">nducquangg@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/duc-quang/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year">2026</span> Duc Quang · built with plain HTML &amp; CSS</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Typing effect for the role line (skipped when reduced motion is preferred)
+    const roles = ["Software Engineer", "Web Developer", "React & React Native Specialist"];
+    const el = document.getElementById("typed");
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      let i = 0, n = roles[0].length, deleting = true;
+      setTimeout(function tick() {
+        const word = roles[i];
+        n += deleting ? -1 : 1;
+        el.textContent = word.slice(0, n);
+        let delay = deleting ? 40 : 80;
+        if (!deleting && n === word.length) { deleting = true; delay = 1800; }
+        else if (deleting && n === 0) { deleting = false; i = (i + 1) % roles.length; delay = 300; }
+        setTimeout(tick, delay);
+      }, 1800);
+    }
+  </script>
+</body>
+</html>
